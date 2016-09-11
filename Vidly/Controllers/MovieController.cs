@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using Vidly.Models;
 
 namespace Vidly.Controllers
 {
@@ -11,7 +8,8 @@ namespace Vidly.Controllers
         // GET: Movie
         public ActionResult Random()
         {
-            return View();
+            var movie = new Movie() { name = "thuy" };
+            return View(movie);
         }
     }
 }
